@@ -45,8 +45,29 @@ func main() {
 	fmt.Println("nos[3:] (idx 3 to end) =", nos[3:])
 	fmt.Println("nos[:6] (idx 0 to 5) =", nos[:6])
 
-	nos2 := nos
+	nos2 := nos // a slice is a pointer to an underlying array
 	nos[0] = 9999
 	fmt.Printf("nos[0] = %d, nos2[0] = %d\n", nos[0], nos2[0])
 
+	fmt.Println("After sorting")
+	sort(nos)
+	fmt.Println(nos)
+
+	fmt.Println("deep copying a slice")
+	dupNos := make([]int, len(nos))
+	copy(dupNos, nos)
+	dupNos[0] = 7777
+	fmt.Println("nos = ", nos)
+	fmt.Println("dupNos = ", dupNos)
+
+}
+
+func sort(values []int) {
+	for i := 0; i < len(values)-1; i++ {
+		for j := i + 1; j < len(values); j++ {
+			if values[i] > values[j] {
+				values[i], values[j] = values[j], values[i]
+			}
+		}
+	}
 }
