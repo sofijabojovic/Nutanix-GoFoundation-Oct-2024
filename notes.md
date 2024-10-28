@@ -24,3 +24,31 @@
 - No powerpoint
 - Discuss & Code
 
+## Why Go?
+- Simple Language
+    - ONLY 25 keywords
+    - No access modifiers (NO public/private/protected)
+    - No classes (only structs)
+    - No inheritance (only composition)
+    - No reference types (everything is a value)
+    - No pointer arithmatic
+    - No exceptions (only errors)
+    - No try-catch-finally construct
+    - No implicit type conversion
+- Compiled to machine code
+    - Has tooling support for cross compilation
+- Performance
+    - Close to hardware
+    - Compile to machine code
+    - Equivalent to C++
+- Concurrency Support
+    - Managed Concurrency (vs OS Thread based concurrency)
+    - Goroutines - concurrency model
+        - Cheap (4 KB)
+        - Efficient (minimizes context switch)
+    - Concurrency support is built in the language itself
+        - "go" keyword, channel ("chan") data type, channel ("<-") operator, for-range, select-case
+        - Standard library
+            - "sync" package
+            - "sync/atomic" package
+
