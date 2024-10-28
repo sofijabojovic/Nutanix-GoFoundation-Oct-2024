@@ -152,3 +152,13 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 ### Map
     - typed collection of key-value pairs
 
+## Error Handling
+- Errors are values
+- By convention, values that implement "error" interface
+    - Error() method
+- Errors are returned (not "thrown")
+- Creating an error
+    - errors.New()
+    - fmt.Errorf()
+    - Custom type implementing "error" interface
+

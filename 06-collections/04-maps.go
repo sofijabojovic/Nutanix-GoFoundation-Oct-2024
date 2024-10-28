@@ -32,7 +32,7 @@ func main() {
 	if rank, exists := productRanks[nonExistentKey]; exists {
 		fmt.Printf("productRanks[%q] = %d\n", nonExistentKey, rank)
 	} else {
-		fmt.Printf("key %q does not exist\n", nonExistentKey)
+		fmt.Printf("key %q does not exist, rank = %d\n", nonExistentKey, rank)
 	}
 
 	fmt.Println("Removing a key")
