@@ -124,3 +124,11 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 #### package scope
     - Cannot use :=
     - Can have unsed variables
+
+## Programming constructs
+### if else
+### switch-case
+### for
+
+## functions
+
