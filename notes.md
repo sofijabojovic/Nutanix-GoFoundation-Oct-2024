@@ -12,7 +12,7 @@
 - Session-01    : 01:30 hrs
 - Tea Break     : 00:15
 - Session-02    : 01:30 hrs
-- Lunch Break   : 00:30
+- Lunch Break   : 00:45
 - Session-03    : 01:30 hrs
 - Tea Break     : 00:15
 - Session-04    : 01:30 hrs
