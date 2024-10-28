@@ -62,3 +62,20 @@ go build <filename.go>
 go run <filename.go>
 ```
 
+### Cross Compilation
+#### List the Go tooling system environment variables
+```
+go env
+```
+#### Env variables for cross compilation
+```
+go env GOOS GOARCH
+```
+#### List of supported platforms
+```
+go tool dist list
+```
+#### How to cross compile
+```
+GOOS=windows GOARCH=amd64 go build 01-hello-world.go
+```
