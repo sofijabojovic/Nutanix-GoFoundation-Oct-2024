@@ -138,3 +138,10 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
     - return functions as return values
 - variadic functions
 - deferred functions
+
+## Collections
+### Array
+    - fixed sized typed collection
+### Slice
+### Map
+
