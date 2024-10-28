@@ -144,5 +144,11 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
     - fixed sized typed collection
 ### Slice
     - varying sized typed collection
+    - apis
+        - len()
+        - append()
+        - cap()
+        - make()
 ### Map
+    - typed collection of key-value pairs
 

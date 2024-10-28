@@ -59,7 +59,6 @@ func main() {
 	dupNos[0] = 7777
 	fmt.Println("nos = ", nos)
 	fmt.Println("dupNos = ", dupNos)
-
 }
 
 func sort(values []int) {
