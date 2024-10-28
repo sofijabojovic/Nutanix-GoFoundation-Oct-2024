@@ -143,5 +143,6 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 ### Array
     - fixed sized typed collection
 ### Slice
+    - varying sized typed collection
 ### Map
 
