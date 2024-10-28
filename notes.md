@@ -79,3 +79,48 @@ go tool dist list
 ```
 GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 ```
+
+## Data Types
+- bool
+- string
+- integers
+    - int8
+    - int16
+    - int32
+    - int64
+    - int
+- unsigned integers
+    - uint8
+    - uint16
+    - uint32
+    - uint64
+    - uint
+- floating points
+    - float32
+    - float64
+- complex numbers
+    - complex64 (real[float32] + imaginary[float32])
+    - complex128 (real[float64] + imaginary[float64])
+- type alias
+    - byte
+    - rune (unicode code point)
+
+### Zero values
+
+| type | value |
+| -------|-------- |
+| int, uint, float | 0 |
+| string | "" |
+| bool | false |
+| func | nil |
+| struct | struct instance |
+| pointer |nil |
+| interface | nil | 
+
+### Variables in function scope & package scope
+#### function scope
+    - Can use :=
+    - Cannot have unused variables
+#### package scope
+    - Cannot use :=
+    - Can have unsed variables

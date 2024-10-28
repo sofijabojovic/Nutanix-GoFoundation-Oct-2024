@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// unused variable in package scope is valid
 var appName = "Variables_App"
 
 func main() {
@@ -86,5 +87,8 @@ func main() {
 	x, y, str := 100, 200, "Sum of %d and %d is %d\n"
 	result := x + y
 	fmt.Printf(str, x, y, result)
+
+	// unused variable at function scope (invalid)
+	// var unused_variable int = 100
 
 }

@@ -39,9 +39,9 @@ func main() {
 	*/
 
 	const (
-		red = (iota * 2) + 1
-		green
-		blue
+		red   = (iota * 2) + 1 // (0*2)+1 = 1
+		green                  // (1*2)+1 = 3
+		blue                   // (2*2)+1 = 5
 	)
 
 	fmt.Printf("red = %d, green = %d and blue = %d\n", red, green, blue)
