@@ -47,5 +47,6 @@ func main() {
 	*/
 	var milk *PerishableProduct = NewPerishableProduct(100, "Flavoured Milk", 50, "2 Days")
 	fmt.Printf("%#v\n", milk)
+	milk.name = "Chocolate Milk"
 	fmt.Println(milk.id, milk.name, milk.cost, milk.expiry)
 }
