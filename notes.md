@@ -162,3 +162,13 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
     - fmt.Errorf()
     - Custom type implementing "error" interface
 
+## Panic & Recovery
+### Panic
+- represents the state of the application where the application execution cannot proceed further
+- the application attempts to shutsdown after executing all the defferred functions
+- create a panic
+    - panic()
+### Recovery
+- recover() returns the error that resulted in the panic
+- optimal to use in deferred functions
+
