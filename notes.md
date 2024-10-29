@@ -172,3 +172,28 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 - recover() returns the error that resulted in the panic
 - optimal to use in deferred functions
 
+## Modules & Packages
+### Module
+- Any code that need to be versioned & deployed together
+- Any folder that has the go.mod file
+- go.mod file
+    - module name
+        - advisable to treat the complete repo path as module name
+    - target go version 
+    - dependencies
+#### Module commands
+- Create
+```
+go mod init <module_name>
+```
+```
+go mod tidy
+go get <module_name>
+go mod download
+```
+- Reference
+    - https://go.dev/ref/mod
+    
+### Package
+- internal organization of a module
+- typically folders
