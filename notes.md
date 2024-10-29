@@ -197,3 +197,8 @@ go mod download
 ### Package
 - internal organization of a module
 - typically folders
+
+## Concurrency
+### WaitGroup
+- semaphore based counter
+- has the ability to block the execution of a function until the conter becomes 0
