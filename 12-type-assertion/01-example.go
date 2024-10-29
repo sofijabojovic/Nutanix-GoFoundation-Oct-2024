@@ -9,7 +9,8 @@ type Product struct {
 }
 
 func main() {
-	var x interface{}
+	// var x interface{}
+	var x any
 	x = 100
 	x = "Veniam amet esse anim aute laborum commodo eu culpa consectetur occaecat anim in ad irure."
 	x = 19.99
